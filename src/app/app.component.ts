@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Blockfrost } from "lucid-cardano";
-import { Lucid } from "https://deno.land/x/lucid@0.10.5/mod.ts";
+import { Blockfrost, Lucid } from "lucid-cardano";
 
 @Component({
   selector: 'x73-root',
