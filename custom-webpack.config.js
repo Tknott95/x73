@@ -3,6 +3,8 @@ const pkg = require('./package.json');
 
 module.exports = {
   experiments: {
-    topLevelAwait: true
+    topLevelAwait: true,
+    asyncWebAssembly: true,
+    layers: true
   }
 }
