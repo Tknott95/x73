@@ -1,15 +1,25 @@
 const webpack = require('webpack');
 const pkg = require('./package.json');
 
-module.exports = (config, options) => {
+module.exports = {
   experiments: {
     topLevelAwait: true
   }
-  // config.plugins.push(
-  //   new webpack.DefinePlugin({
-  //     'APP_VERSION': JSON.stringify(pkg.version),
-  //   }),
-  // );
+}
 
-  return config;
-};
+// module.exports = (config, options) => {
+//   experiments: {
+//     topLevelAwait: true
+//   }
+//   // config.plugins.push(
+//   //   new webpack.DefinePlugin({
+//   //     'APP_VERSION': JSON.stringify(pkg.version),
+//   //   }),
+//   // );
+
+//   experiments: {
+//     topLevelAwait: true
+//   }
+
+//   return config;
+// };
