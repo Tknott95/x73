@@ -15,8 +15,10 @@ export class AppComponent {
       "Preview",
     );
 
-    const api = await window.cardano['nami'].enable();
-    lucid.selectWallet(api);
+    // console.log(lucid);
+
+    // const api = await window.cardano['nami'].enable();
+    // lucid.selectWallet(api);
 
     // const tx = await lucid.newTx()
     //   .payToAddress("addr...", { lovelace: 5000000n })
