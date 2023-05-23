@@ -22,6 +22,7 @@
               "path": "./extra-webpack.config.js"
             },
             "outputPath": "dist/x73",
+            "indexTransform": "./index-html-transform.js",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
