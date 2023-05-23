@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Blockfrost, Lucid } from "lucid-cardano"; 
+import { Blockfrost, Lucid } from "lucid-cardano";
 
 @Component({
   selector: 'x73-root',
@@ -7,28 +7,28 @@ import { Blockfrost, Lucid } from "lucid-cardano";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+
   title = 'x73';
-  async ngOnInit() { 
+  async ngOnInit() {
     const lucid = await Lucid.new(
       new Blockfrost("https://cardano-preview.blockfrost.io/api/v0", "<projectId>"),
       "Preview",
     );
 
-    const api = await window.cardano.nami.enable();
+    const api = await window.cardano['nami'].enable();
     lucid.selectWallet(api);
-    
+
     // const tx = await lucid.newTx()
     //   .payToAddress("addr...", { lovelace: 5000000n })
     //   .complete();
-    
+
     // const signedTx = await tx.sign().complete();
-    
+
     // const txHash = await signedTx.submit();
-    
+
     // console.log(txHash);
   }
 
- 
+
 
 }
