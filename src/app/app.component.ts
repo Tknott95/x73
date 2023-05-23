@@ -14,6 +14,21 @@ export class AppComponent {
       new Blockfrost("https://cardano-preview.blockfrost.io/api/v0", "<projectId>"),
       "Preview",
     );
+
+    const api = await window.cardano.nami.enable();
+    lucid.selectWallet(api);
+    
+    // const tx = await lucid.newTx()
+    //   .payToAddress("addr...", { lovelace: 5000000n })
+    //   .complete();
+    
+    // const signedTx = await tx.sign().complete();
+    
+    // const txHash = await signedTx.submit();
+    
+    // console.log(txHash);
   }
+
+ 
 
 }
