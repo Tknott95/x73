@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'x73';
   async ngOnInit() {
     const lucid = await Lucid.new(
-      new Blockfrost("https://cardano-preview.blockfrost.io/api/v0", "<projectId>"),
+      new Blockfrost("https://cardano-preview.blockfrost.io/api/v0", "previewO7v5u5we498ZmJqoyi9pmNGwHzg1iNcI"),
       "Preview",
     );
 
